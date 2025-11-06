@@ -1,5 +1,5 @@
 /* Verticle View port */
-@media screen and (max-width: 800px) and (min-width: 400px) {
+@media screen and (max-width: 800px) and (min-width: 500px) {
 
     .headerTwoDivision {
         display: flex;
@@ -92,7 +92,7 @@
 
     .footerdivision {
         padding: 50px;
-        gap: 50px;
+        gap: 100px;
     }
 
     .partnersDivision {

@@ -370,6 +370,11 @@ body {
     gap: 50px;
 }
 
+.footerRightCompanyQuickLinks h3 {
+    color: grey;
+    font-size: 10px;
+}
+
 .footerRightCompanyQuickLinks a {
     display: flex;
     flex-direction: column;

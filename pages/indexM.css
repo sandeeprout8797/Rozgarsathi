@@ -1,5 +1,152 @@
-@media screen and (max-width: 400px) {
-    body {
-        background-color: pink;
+@media screen and (max-width: 500px) {
+
+    .headerTwoDivision {
+        padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .headerTwoDivision div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cartButtonImage {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+    .accountButtonImage {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+
+    .contentOneDivision {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contentOneDivision img {
+        height: 250px;
+        width: 250px;
+
+    }
+
+    .contentTwoDivision {
+        flex-direction: column-reverse;
+    }
+    .contentTwoImageDiv div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contentTwoImgThree {
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .ourServicesDivision {
+        padding: 20px;
+    }
+    .ourServicesDivision div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .statisticDivision {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .statsRightDivision div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forumDivision {
+        padding: 20px;
+        font-size: 15spx;
+    }
+    .inputGroup {
+        gap: 20px;
+    }
+    .forumInputDivision input {
+        width: 100px;
+    }
+    .forumInputDivision label {
+        width: 100px;
+        font-size: 13px;
+    }
+    .pricingDivision {
+        padding: 20px;
+    }
+    .pricingDivision div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partnersDivision {
+        padding: 20px;
+    }
+    .collabImagesDivision {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .collabImagesDivision img {
+        height: 30px;
+        width: 50px;
+    }
+
+    .callBookingDivision {
+        display: flex;
+        flex-direction: column;
+    }
+    .callBookingDivision img {
+        height: 300px;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .storyDivision img {
+        width: 50px;
+        height: 60px;
+    }
+
+    .teamPartDivision {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footerdivision {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerWhatsAppMessage {
+        bottom: 70px;
+        right: 30px;
+    }
+    .footerMailMesssage {
+        bottom: 20px;
+        right: 30px;
+    }
+    
+    .footerWhatsAppLogo {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+    .footerMailLogo {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
     }
 }
