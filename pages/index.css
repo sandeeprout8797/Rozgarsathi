@@ -25,8 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -88,9 +87,9 @@ body {
 .contentOneDivision {
     display: flex;
     padding-top: 100px;
-    padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 100px;
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid rgb(185, 185, 185);
@@ -104,14 +103,10 @@ body {
 
 .contentTwoDivision {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    padding-bottom: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
+    gap: 50px;
+    padding: 100px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .contentTwoDescriptionOneDiv {
@@ -119,28 +114,18 @@ body {
 }
 
 .contentTwoImgOne {
-    position: absolute;
-    top: -50px;
-    left: 150px;
     height: 200px;
-    width: 200px;
+    width: 298px;
 }
 
 .contentTwoImgTwo {
-    position: absolute;
     height: 200px;
-    width: 200px;
-    top: 200px;
-    left: 50px;
-    bottom: -100px;
+    width: 298px;
 }
 
 .contentTwoImgThree {
     height: 200px;
-    width: 550px;
-    position: absolute;
-    top: 200px;
-    left: 300px;
+    width: 600px;
 }
 
 
@@ -220,7 +205,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 100px;
     font-size: larger;
@@ -247,7 +232,7 @@ body {
 }
 
 .forumInputDivision input {
-    width: 400px;
+    width: 300px;
 }
 
 .inputGroup {
@@ -337,8 +322,8 @@ body {
 }
 
 .storyDivision img {
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
 }
 
 

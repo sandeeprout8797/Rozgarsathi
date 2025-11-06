@@ -1,0 +1,162 @@
+/* Verticle View port */
+@media screen and (max-width: 800px) and (min-width: 400px) {
+    body {
+        background-color: red;
+    }
+
+    .headerTwoDivision {
+        padding: 50px;
+    }
+
+    .contentOneDivision {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contentOneDivision img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .contentTwoDivision {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .contentTwoImageDiv div {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .ourServicesDivision {
+        padding: 50px;
+    }
+
+    .forumDivision {
+        padding: 50px;
+    }
+    .inputGroup {
+        gap: 100px;
+    }
+
+    .statisticDivision {
+        padding: 50px;
+    }
+
+    .pricingDivision {
+        padding: 50px;
+    }
+
+    .partnersDivision {
+        padding: 50px;
+    }
+
+    .teamPartDivision {
+        padding: 50px;
+    }
+
+    .footerdivision {
+        padding: 50px;
+        gap: 100px;
+    }
+
+    .partnersDivision {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .partnersDivision img {
+        height: 50px;
+        width: 70px;
+    }
+
+    .callBookingDivision {
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 100px;
+    }
+    .callBookingDivision img {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+
+    .headerTwoDivision {
+        gap: 50px;
+    }
+
+
+    .contentOneDivision {
+        gap: 50px;
+    }
+    .contentOneDivision img {
+        height: 400px;
+        width: 300px;
+    }
+
+
+    .contentTwoDivision {
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contentTwoImageDiv div {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .contentTwoImgOne {
+        width: 150px;
+        height: 150px;
+    }
+    .contentTwoImgTwo {
+        width: 150px;
+        height: 150px;
+    }
+    .contentTwoImgThree {
+        width: 310px;
+        height: 150;
+    }
+
+
+    .partnersDivision img {
+        height: 60px;
+        width: 80px;
+    }
+
+
+    .callBookingDivision {
+        gap: 50px;
+    }
+    .callBookingDivision img {
+        height: 400px;
+        width: 400px;
+    }
+
+
+    .forumDivision {
+        padding: 100px;
+    }
+    .inputGroup {
+        gap: 100px;
+    }
+
+
+    .teamPartDivision {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+}
