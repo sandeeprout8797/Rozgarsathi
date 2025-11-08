@@ -3,7 +3,6 @@
 
     .headerTwoDivision {
         display: flex;
-        flex-direction: column-reverse;
         gap: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -23,7 +22,7 @@
     }
 
     .headerTwoDivision {
-        padding: 50px;
+        padding: 30px;
     }
 
     .contentOneDivision {
@@ -145,6 +144,7 @@
 
     .headerTwoDivision {
         gap: 50px;
+        padding: 30px;
     }
 
 
