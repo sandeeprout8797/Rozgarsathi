@@ -20,6 +20,13 @@
         width: 30px;
         border-radius: 15px;
     }
+    .menuButton {
+        height: 30px;
+        width: 30px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+            
 
     .contentOneDivision {
         display: flex;
