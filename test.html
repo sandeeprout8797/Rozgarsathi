@@ -1,108 +1,545 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizontal Slide Menu Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* logo left, button right */
-      position: relative;
-    }
-    .logo {
-      font-size: 20px;
-    }
-    .menu-button {
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 18px;
-      cursor: pointer;
-      z-index: 2; /* above the nav */
-    }
-    nav {
-      position: absolute;
-      left: 50px; /* start just after logo area; adjust as needed */
-      right: 100px; /* end just before menu button; adjust */
-      top: 100%; /* hide below header initially */
-      background: #444;
-      overflow: hidden;
-      height: 0;
-      transition: height 0.3s ease;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      border-right: 1px solid #555;
-    }
-    nav ul li:last-child {
-      border-right: none;
-    }
-    nav ul li a {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 20px;
-      white-space: nowrap;
-    }
-    nav ul li a:hover {
-      background: #555;
-    }
-    nav.show {
-      height: 50px; /* enough height for the links */
-    }
-    .content {
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">Your Logo</div>
-    <button class="menu-button" id="menuToggle">☰ Menu</button>
-    <nav id="mainNav">
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="en‑IN">
 
-  <div class="content">
-    <h1>Welcome to the Page</h1>
-    <p>Your main content goes here.</p>
-  </div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
 
-  <script>
-    const menuButton = document.getElementById('menuToggle');
-    const nav = document.getElementById('mainNav');
+        <title> RozgarSathi – Personalized Job Assistance for Freelancing, Part-Time & MNC Placements </title>
+        
+        <meta name="description" content="“RozgarSathi offers tailored job assistance: freelancing, part-time roles, MNC & private placements plus an AI resume generator—launch your career with us today.”">
+    
+        <link rel="canonical" href="https://rozgarsathi.co.in/">
+    
+        <meta property="og:title" content="RozgarSathi – Job Portal India | Your Career Journey Begins Here">
+        <meta property="og:description" content="Search thousands of job listings and internships across India with RozgarSathi. Start your career in Delhi, Gurugram & beyond today!">
+        <meta property="og:url" content="https://rozgarsathi.co.in/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="RozgarSathi">
+        <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
+    
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RozgarSathi – Job Portal India">
+        <meta name="twitter:description" content="Find jobs and internships in Delhi, Gurugram & across India with RozgarSathi.">
+        <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
+        <meta name="twitter:site" content="@YourTwitterHandle">
+    
+        <meta name="robots" content="index, follow">
+    
+        <meta http‑equiv="content‑language" content="en‑IN">
+        <meta name="geo.region" content="IN‑HR">
+        <meta name="geo.placename" content="Gurugram, Haryana, India">
+        <meta name="geo.position" content="28.4595;77.0266">
+        <meta name="ICBM" content="28.4595, 77.0266">
+    
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RozgarSathi",
+            "url": "https://rozgarsathi.co.in/",
+            "logo": "https://rozgarsathi.co.in/assets/logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Your Street Address Here",
+                "addressLocality": "Gurugram",
+                "addressRegion": "Haryana",
+                "postalCode": "1220XX",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "28.4595",
+                "longitude": "77.0266"
+            },
+            "sameAs": [
+                "https://www.instagram.com/YourInstagramHandle",
+                "https://www.linkedin.com/in/YourLinkedInProfile",
+                "https://twitter.com/YourTwitterHandle"
+            ]
+            }
+        </script>
+    
+        <link rel="stylesheet" href="test.css">
 
-    menuButton.addEventListener('click', function() {
-      if (nav.classList.contains('show')) {
-        nav.classList.remove('show');
-        menuButton.textContent = '☰ Menu';
-      } else {
-        nav.classList.add('show');
-        menuButton.textContent = '✖ Close';
-      }
-    });
-  </script>
-</body>
+        <link rel="icon" href="./assets/images/companyLogoImage.JPG">
+  
+    </head>
+
+    <body>
+        <div class="headerOneDivision">
+            <h3> Rozgarsathi </h3>
+        </div>
+
+        <div class="headerTwoDivision">
+            <div class="companylogoImgName">
+                <h3> RozgarSathi</h3>
+                <img class="companyLogoImage" src="./assets/images/companyLogoImage.JPG">
+            </div>
+
+            <div class="navigationButtonDivision">
+                <a class="homePageLink" href="./index.html"> Home </a>
+                <a class="aboutUsPageLink" href="./pages/aboutus.html"> About Us </a>
+                <a class="shopPageLink" href=""> Shop </a>
+                <a class="eventsPageLink" href="./pages/events.html"> Events </a>
+                <a class="newsPageLink" href="./pages/news.html"> News </a>
+                <a class="coursesPageLink" href=""> Courses </a>
+                <a class="servicesPageLink" href="./pages/services.html"> Services </a>
+                <a class="pricePageLink" href=""> Pricings </a>
+                <a class="appoinmentPageLink" href=""> Appointments </a>
+                <a class="jobPageLink" href=""> Jobs </a>
+                <a class="testimonialPageLink" href="./pages/testimonial.html"> Testimonials </a>
+            </div>
+
+            <div class="headerTwoDivisionButtons">
+                <button class="cartButton"> <img class="cartButtonImage" src="./assets/images/cartButtonImage.jpg"> </button>
+                <button class="myAccountButton"> <img class="accountButtonImage" src="./assets/images/accountImage.jpg"> </button>
+                <button class="menuButton"> ☰ </button>
+            </div>
+        </div>
+
+        <div class="contentOneDivision">
+            <div class="contentOneDescriptionOneDiv">
+                <h1> Our Vision </h1> <br>
+                <h2> Shaping our future </h2>
+                <p1> We see job search not as a struggle, but as a chance to grow. At Rozgarsathi, we build a community of professionals and organisations powered by purpose—not just employment. Through workshops, skills-building and ongoing support, we’re more than a recruiter —we’re your career & talent ‘sathi’. </p1> 
+                <button> Learn more </button>
+            </div>
+
+            <div class="contenOneImageOneDiv">
+                <img class="contenOneImageOne" src="./assets/images/contentOneImageOne.jpg">
+            </div>
+        </div>
+
+        <div class="contentTwoDivision">
+            <div class="contentTwoImageDiv">
+                <div class="">
+                    <img class="contentTwoImgOne" src="./assets/images/contentTwoImageOne.jpg">
+                    <img class="contentTwoImgTwo" src="./assets/images/contentTwoImage.jpg">
+                </div>
+                <img class="contentTwoImgThree" src="./assets/images/contentTwoImageThree.jpg">
+            </div>
+            
+            <div class="contentTwoDescriptionOneDiv">
+                <h1> "The Only Sathi You Need for Your Next Job" </h1>
+                <p2>- it's just not a qoute, We stand by this </p2>
+                <p1> Every placement we make is a step towards fulfuiling dreams <br> and building carrers, for individuals and communities. </p1>
+            </div>
+
+        </div>
+
+        <div class="ourServicesDivision">
+            <h1> Discover our <br> Major Services </h1>
+          
+            <div class="servicesDescDivisionOne">
+              <div class="serviceItemOne">
+                <h1>1</h1>
+                <h2>24/7 Career Counselling</h2>
+                <p>Our expert advisors are available around the clock to guide you through career choices, transitions and growth strategies — whenever you need us.</p>
+              </div>
+          
+              <div class="serviceItemTwo">
+                <h1>2</h1>
+                <h2>AI-Powered Resume Generator</h2>
+                <p>Leverage our intelligent tool to craft optimized resumes that highlight your strengths, align with industry standards and impress recruiters.</p>
+              </div>
+          
+              <div class="serviceItemThree">
+                <h1>3</h1>
+                <h2>MNC Direct Referrals & Mass Hiring</h2>
+                <p>Access our network of multinational clients and benefit from direct referrals and large-volume hiring drives tailored to your profile and ambitions.</p>
+              </div>
+            </div>
+          
+            <div class="servicesDescDivisionTwo">
+              <div class="serviceItemFour">
+                <h1>4</h1>
+                <h2>Get Industry-Ready with Us</h2>
+                <p>Through practical training, mock projects and industry exposure, we prepare you comprehensively to enter the workforce with confidence and competence.</p>
+              </div>
+          
+              <div class="serviceItemFive">
+                <h1>5</h1>
+                <h2>Mock Interviews & Interview Prep</h2>
+                <p>Practice with real-world interview simulations, receive feedback from professionals and refine your presentation, tech-skills and confidence.</p>
+              </div>
+          
+              <div class="serviceItemSix">
+                <h1>6</h1>
+                <h2>Authentic Freelancing Opportunities</h2>
+                <p>Explore verified freelance roles vetted by our team — giving you flexibility, trust and quality assignments in the gig economy.</p>
+              </div>
+            </div>
+
+        </div>
+          
+        <div class="contentThreeDivision" >
+            <h1> Emabark on your  </h1>
+            <h1> Next Journey </h1>
+            <button class="startNowContentThreeDivisionButton"> Start Now </button>
+        </div>
+
+        <div class="statisticDivision">
+            <div class="statsLeftDivision">
+                <h1> Key achievements in our job <br> placement success </h1> <br> 
+                <p> From resume building to interview coaching and job matching, our <br> key milestones reflect our commitment to empowering job seekers <br> and employee alike. </p>
+            </div>
+
+            <div class="statsRightDivision">
+                <div class="statsRightOneDivision">
+                    <div class="statsOne">
+                        <h1>45%</h1>
+                        <p>Increase in job placements</p>
+                    </div>
+
+                    <div class="statsTwo">
+                        <h1>85%</h1>
+                        <p> Succes rate in job placements </p>
+                    </div>
+
+                    <div class="statsThree">
+                        <h1>60%</h1>
+                        <p> Client satisfaction rate </p>
+                    </div>
+                </div>
+
+                <div class="statsRightTwoDivision">
+                    <div class="statsFour">
+                        <h1> 2,000 </h1>
+                        <p> Companies partnered </p>
+                    </div>
+                    <div class="statsFive">
+                        <h1> 1.2 Million </h1>
+                        <p> job seekers assisted </p>
+                    </div>
+                    <div class="statsSix">
+                        <h1>500</h1>
+                        <p> Workshops conducted </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forumDivision">
+            <div class="forumDescDivision">
+              <h1>Let’s Connect</h1>
+              <p>“Have a question or want to explore options? Connect with us and we’ll take it from there.”</p>
+            </div>
+          
+            <div class="forumInputDivision">
+              <div class="inputGroup">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name here">
+              </div>
+              <div class="inputGroup">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number here">
+              </div>
+              <div class="inputGroup">
+                <label>Your Email</label>
+                <input type="email" placeholder="Enter your email here">
+              </div>
+              <div class="inputGroup">
+                <label>Your Company</label>
+                <input type="text" placeholder="Enter your company here">
+              </div>
+              <div class="inputGroup">
+                <label>Subject</label>
+                <input type="text" placeholder="Enter your subject here">
+              </div>
+              <div class="inputGroup">
+                <label>Your Question</label>
+                <input type="text" placeholder="Enter your question here">
+              </div>
+            </div>
+
+            <button class="forumSubmitButton">Submit</button>
+
+        </div>
+
+        <div class="pricingDivision">
+            <h1> Competitive Pricing </h1>
+            <p1> We offer strategically structured service fees that reflect our commitment to delivering quality talent solutions—ensuring you receive professional expertise at a fair and competitive rate. </p1>
+
+            <div class="pricingDivisionsDiv">
+                <div class="pricingBeginner">
+                    <h3>Beginner</h3>
+                    <h1> ₹ __.__ / month </h1>
+                    <p> - </p>
+
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+
+                <div class="pricingIntermediate">
+                    <h3>Intermediate</h3>
+                    <h1> ₹ __.__ / month </h1>
+                    <p> - </p>
+                     
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+
+                <div class="pricingAdvance">
+                    <h3> Advance </h3>
+                    <h1> ₹ __.__ / month </h1>
+                    <p> - </p>
+
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonialDivision">
+            <button class="previousTestimonialBotton">
+                .
+            </button>
+
+            <div class="testimonialdiv">
+
+            </div>
+
+            <button class="nextTestimonialBotton">
+                .
+            </button>
+        </div>
+
+        <div class="partnersDivision">
+            <div class="partnersDiscDivision">
+                <h1> Partners and refrences </h1>
+                <p1> Together, we partner with business and organizations dedicated to wordforce development and creating a thriving job market.</p1>
+                <h3> Show Deatils -> </h3>
+            </div>
+
+            <div class="collabImagesDivision">
+                <img class="" src="./assets/images/googleLogo.jpg">
+                <img class="" src="./assets/images/yahooLogo.jpg">
+                <img class="" src="./assets/images/linkedinLogo.jpg">
+                <img class="" src="./assets/images/datacovetLogo.jpg">
+                <img class="" src="./assets/images/ibmLogo.jpg">
+                <img class="" src="./assets/images/cognizentLogo.jpg">
+            </div>
+            
+        </div>
+
+        <div class="callBookingDivision">
+            <div class="callBookingDiscDivision">
+                <h1> A Call for Career Development </h1> <br><br>
+                <p1> Job placement services are essential for connecting job seekers with <br> employee ensuring a match that benefits both parties. Our focus in on <br> understanding the needs of candidates and companies to create successful <br> employement outcomes.</p1> <br><br><br>
+                <button class="callBookingButton"> Call Now </button>
+            </div>
+            <div class="callBookingImgDivision">
+                <img class="callBookingImage" src="./assets/images/callOneImage.jpg">
+            </div>
+        </div>
+
+        <div class="storyDivision">
+            <img class="storyDivisionImgOne" src="./assets/images/depression.jpg">
+            <img class="storyDivisionImgTwo" src="./assets/images/depressionTwoImage.jpg">
+            <img class="storyDivisionImgThree" src="./assets/images/interviewOneImage.jpg">
+            <img class="storyDivisionImgFour" src="./assets/images/interviewTwoImage.jpg">
+            <img class="storyDivisionImgFive" src="./assets/images/hardworkImage.jpg">
+            <img class="storyDivisionImgSix" src="./assets/images/storySuccessImage.jpg">
+        </div>
+
+        <div class="teamPartDivision">
+            <div class="teamPartDescDivision">
+                <h1> Empowering careers for a Brighter Future </h1>
+                <p1> Join us in our mission to connect individuals with meaningful employemen oppurtunities. We <br> focus on fostering carrer growth through personlized support and innovative solutions. </p1>
+            </div>
+
+            <div class="teamPartButtonDivision">
+                <button class="teamPartButton">
+                    Be a Part of the WorkForce Revolution
+                </button>
+            </div>
+        </div>
+
+        <div class="singnInDivision">
+            <h3> Help Us Know You More ! </h3>
+            <a> SignIn </a>
+        </div>
+
+        <div class="footerdivision">
+            <div class="footerLeftCompanyDescription">
+                <div class="footerCompanyLogo">
+                    <img class="footerCompanyLogoImage" src="">
+                    <h3> RozgarSathi </h3>
+                </div>
+
+                <div class="footerCompanyQuote">
+                    <h1> Your <br> Skills, <br> Our Passion </h1>
+                </div>
+            </div>
+
+            <div class="footerRightCompanyQuickLinks">
+                
+                <div class="footerRightKnowUsMore">
+                    <h3> Get To Know About Us More </h3>
+
+                    <a class="" href=""> About Us </a>
+                    <a class="" href=""> Careers </a>
+                    <a class="" href=""> Brand Center </a>
+                    <a class="" href=""> Privacy </a>
+                </div>
+
+                <div class="footerRightConnectUs">
+                    <h3> Connect With Us </h3>
+
+                    <a class="" href=""> Linkedin </a>
+                    <a class="" href=""> Twitter </a>
+                    <a class="" href=""> Instagram </a>
+                </div>
+
+                <div class="footerRightNeedHelp">
+                    <h3> Need Help ? </h3>
+
+                    <a class="" href=""> Contact Us </a>
+                    <a class="" href=""> Help center </a>
+                    <a class="" href=""> App </a>
+                    <a class="" href=""> Secuirity Advisory </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="backToTopDivision">
+            <a>Back To top </a>
+
+            <div class="footerWhatsAppMessage">
+                <a href="https://wa.me/919625994420?text=Hello%20there!" target="_blank">
+                    <img src="./assets/images/whatsappLogoImage.jpg" class="footerWhatsAppLogo">
+                </a>
+            </div>
+
+            <div class="footerMailMesssage">
+                <a href="mailto:privaterozgarsathi@gmail.com?subject=Inquiry&amp;body=Hi,%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about...">
+                    <img src="./assets/images/mailLogoImage.jpg" class="footerMailLogo">
+                </a>
+            </div>
+        </div>
+
+        <div class="privacyPolicyDivision">
+            <h3> PRIVACY POLICY COPYRIGHT © 2025 rozgarsathi.co.in All rights reserved </h3>
+        </div>
+
+        <script>
+            const menuButton = document.querySelector('.menuButton');
+            const navDiv = document.querySelector('.navigationButtonDivision');
+          
+            menuButton.addEventListener('click', function() {
+              // Toggle a class (or toggle display)
+              if (navDiv.classList.contains('visible')) {
+                navDiv.classList.remove('visible');
+                navDiv.style.display = 'none';
+              } else {
+                navDiv.classList.add('visible');
+                navDiv.style.display = 'block';
+              }
+            });
+        </script>
+
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+        data-cbid="93afbdd8-7ce1-4753-9ae0-a23add0547fc"
+        type="text/javascript" async>
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RozgarSathi",
+            "url": "https://rozgarsathi.co.in/",
+            "logo": "https://rozgarsathi.co.in/assets/logo.png",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Street Address Here",
+            "addressLocality": "Gurugram",
+            "addressRegion": "Haryana",
+            "postalCode": "1220XX",
+            "addressCountry": "IN"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.4595",
+            "longitude": "77.0266"
+            },
+            "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://twitter.com/yourprofile",
+            "https://www.linkedin.com/company/rozgarsathi"
+            ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RozgarSathi",
+        "url": "https://rozgarsathi.co.in/",
+        "sameAs": [
+            "https://www.instagram.com/yourInstagramHandle",
+            "https://www.linkedin.com/in/yourLinkedInProfile",
+            "https://www.facebook.com/yourFacebookPage"
+        ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RozgarSathi",
+        "url": "https://rozgarsathi.co.in/",
+        "logo": "https://rozgarsathi.co.in/assets/logo.png",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address Here",
+        "addressLocality": "Gurugram",
+        "addressRegion": "Haryana",
+        "postalCode": "1220XX",
+        "addressCountry": "IN"
+    },
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "28.4595",
+    "longitude": "77.0266"
+    },
+    "sameAs": [
+        "https://www.instagram.com/YourInstagramHandle",
+        "https://www.linkedin.com/in/YourLinkedInProfile",
+        "https://twitter.com/YourTwitterHandle"
+    ]
+    }
+        </script>
+
+    </body>
+
 </html>

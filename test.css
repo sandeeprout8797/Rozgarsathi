@@ -27,6 +27,27 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
+.menuButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 30px;
+
+    top: 130px;
+    right: -30px;
+}
+.navigationButtonDivision a {
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 250px;
+    
+    background-color: red;
+    position: fixed;
+}
+
 
 .companylogoImgName {
     display: flex;
@@ -90,14 +111,7 @@ body {
     border: none;
 }
 
-.menuButton {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    border: 1px solid black;
-    background-color: white;
-    font-size: 30px;
-}
+
 
 
 
